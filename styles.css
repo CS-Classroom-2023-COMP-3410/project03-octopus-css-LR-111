@@ -1,0 +1,228 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 239, 247);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif; 
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif; 
+    color: rgb(46, 108, 148); 
+    font-weight: bold;
+}
+
+/* Header styling */
+#header {
+    background: linear-gradient(to right, rgb(46, 108, 148), rgb(77, 172, 208));
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#header p {
+    margin: 10px 0 0 0;
+    text-align: left;
+    font-style: italic; 
+}
+
+/* Main content box */
+#main-content {
+    background-color: white;
+    color: rgb(3, 4, 90);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Section headings */
+h2, h3 {
+    color: rgb(46, 108, 148);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Add a short separator under INTRODUCTION */
+h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px; 
+    background-color: rgb(162, 222, 237);
+    margin-top: 10px; 
+}
+
+h4, h5, h6 {
+    color: rgb(46, 108, 148);
+    font-weight: bold;
+}
+
+h5, h6 {
+    font-size: 0.8rem;
+}
+
+/* List styling */
+#main-content ul li::marker {
+    color: rgb(77, 172, 208);
+    font-size: 1.2rem; 
+}
+
+
+/* Highlight the mantle */
+.important {
+    background-color: rgb(162, 222, 237);
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: rgb(46, 108, 148);
+    font-weight: bold;
+}
+
+#main-content a {
+    color: rgb(46, 108, 148); 
+    text-decoration: none; 
+}
+
+/* Octopus Quiz styling */
+#quiz-section {
+    background-color: rgb(162, 222, 237);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+
+
+#quiz-section img {
+    border: 3px solid rgb(118, 23, 222);
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 20px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#quiz-section h2 {
+    margin: 10px 300px 0px -180px;
+    color: rgb(46, 108, 148);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#quiz-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#quiz-section form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#quiz-section input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(46, 108, 148); 
+    border-radius: 5px; 
+}
+
+#quiz-section input[type="submit"] {
+    background-color: rgb(43, 103, 144);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+}
+
+#quiz-section input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Table styling */
+#species-table {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/* Common Octopus Species heading */
+#species-table h2 {
+    text-transform: none; 
+    font-family: 'Times New Roman', Times, serif; 
+    color: rgb(46, 108, 148);
+    margin-bottom: 10px;
+}
+
+
+#species-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f9fa;
+}
+
+#species-table th {
+    background-color: rgb(153, 153, 153);
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+#species-table td {
+    text-align: left;
+    color: rgb(3, 4, 90);
+    padding: 10px;
+}
+
+#species-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+#species-table tr:nth-child(even) {
+    background-color: rgb(209, 239, 247);
+}
+
+/* Footer styling */
+#footer {
+    background-color: rgb(43, 103, 144);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px 40px;
+    margin: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+
